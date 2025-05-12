@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback | KDN Security Services</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+      <img src="Images and Videos/Logo.png" alt="KDN Logo" />
+      <span>KDN Security Services</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="training.html">Training</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="feedback.html" class="active">Feedback</a></li>
+      <li><a href="quotes.html">Quotes</a></li>
+      <li><a href="references.html">References</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Feedback Hero Section -->
+<section class="feedback-hero">
+  <h1>We Value Your Feedback</h1>
+  <p>Tell us about your experience with KDN Security Services. Your opinion helps us improve!</p>
+</section>
+
+<!-- Feedback Form Section -->
+<main>
+  <section class="feedback-container">
+    <h2>Submit Your Feedback</h2>
+    <form action="https://formspree.io/f/manopnaj" method="POST" class="feedback-form">
+    <input type="hidden" name="_subject" value="New Feedback Submission">
+    <input type="text" name="fullname" placeholder="Your Full Name" required>
+    
+    <label for="rating">Your Rating:</label>
+    <div class="star-rating">
+        <input type="radio" id="star5" name="rating" value="5" required>
+        <label for="star5">★</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">★</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">★</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">★</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">★</label>
+    </div>
+    
+    <textarea name="feedback" placeholder="Your feedback..." required></textarea>
+    <button type="submit">Submit Feedback</button>
+    <input type="hidden" name="_next" value="https://yourwebsite.com/submitted.html">
+</form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 KDN Security Services | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

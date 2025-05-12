@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request a Quote | KDN Security Services</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+      <img src="Images and Videos/Logo.png" alt="KDN Logo" />
+      <span>KDN Security Services</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="training.html">Training</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="quotes.html" class="active">Quotes</a></li>
+      <li><a href="references.html">References</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Quote Request Hero -->
+<section class="quote-hero">
+  <h1>Request a Quote</h1>
+  <p>Let us know your security needs, and we'll send you a competitive quote!</p>
+</section>
+
+<!-- Quote Form Section -->
+<main>
+  <section class="quote-container">
+    <h2>Get Your Custom Security Solution</h2>
+    <form action="https://formspree.io/f/manopnaj" method="POST" class="quote-form">
+    <input type="hidden" name="_subject" value="New Quote Request">
+    <input type="text" name="fullname" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+    
+    <select name="service" required>
+        <option value="">-- Select Service --</option>
+        <option value="Guarding Services">Guarding Services</option>
+        <option value="CCTV Surveillance">CCTV Surveillance</option>
+        <option value="Dog Handling Services">Dog Handling Services</option>
+        <option value="VIP Protection">VIP Protection</option>
+        <option value="Alarm Installation">Alarm Installation</option>
+        <option value="Other">Other (Specify in message)</option>
+    </select>
+    
+    <textarea name="message" rows="6" placeholder="Additional Information (Optional)"></textarea>
+    <button type="submit">Submit Request</button>
+    <input type="hidden" name="_next" value="https://yourwebsite.com/submitted.html">
+</form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 KDN Security Services | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
