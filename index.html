@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KDN Security Services</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KDN Security Services</title>
+  <!-- Linking to the CSS file now named index.css -->
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
   <header>
@@ -32,98 +33,96 @@
       <img src="Images and Videos/Alarm System.png" alt="Alarm Systems">
       <div class="slide-caption">Advanced Alarm Systems</div>
     </div>
-  
+
     <div class="mySlides fade">
       <img src="Images and Videos/cctv.png" alt="CCTV Solutions">
       <div class="slide-caption">24/7 CCTV Monitoring</div>
     </div>
-  
+
     <div class="mySlides fade">
       <img src="Images and Videos/Guards.png" alt="Security Guards">
       <div class="slide-caption">Professional Security Personnel</div>
     </div>
-  
+
     <div class="mySlides fade">
       <img src="Images and Videos/VIP-Protection.png" alt="VIP Protection">
       <div class="slide-caption">Executive & VIP Protection</div>
     </div>
-  
+
     <!-- Next/prev buttons -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
-  
-  <!-- Dots/circles -->
+
+  <!-- Dots/circles for slideshow navigation -->
   <div class="dots-container">
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
     <span class="dot" onclick="currentSlide(4)"></span>
   </div>
-  
-  <!-- Add this script just before the closing </body> 
+
+  <main>
+    <section class="hero">
+      <h2>Welcome to KDN Security Services</h2>
+      <p>Providing professional guarding, surveillance, and risk solutions across Botswana.</p>
+      <video controls width="100%" poster="Images and Videos/preview.jpg">
+        <source src="Images and Videos/KDN advert video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section class="overview">
+      <h3>Explore Our Website</h3>
+      <p>Navigate through our services, training programs, project references, and request a quote.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 KDN Security Services | All Rights Reserved</p>
+  </footer>
+
+  <!-- JavaScript for slideshow functionality -->
   <script>
-  let slideIndex = 1;
-  showSlides(slideIndex);
-  
-  // Next/previous controls
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-  
-  // Thumbnail image controls
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  
-  function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
     }
-    
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
     }
-    
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-  }
-  
-  // Auto slideshow functionality
-  function autoSlideshow() {
-    plusSlides(1);
-    setTimeout(autoSlideshow, 5000); // Change image every 3 seconds
-  }
-  
-  // Start the automatic slideshow
-  autoSlideshow();
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+
+      if (n > slides.length) { slideIndex = 1; }
+      if (n < 1) { slideIndex = slides.length; }
+
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+
+    // Automatic slideshow functionality
+    function autoSlideshow() {
+      plusSlides(1);
+      setTimeout(autoSlideshow, 5000); // Change image every 5 seconds
+    }
+    autoSlideshow();
   </script>
-  
-    <main>
-      <section class="hero">
-        <h2>Welcome to KDN Security Services</h2>
-        <p>Providing professional guarding, surveillance, and risk solutions across Botswana.</p>
-        <video controls width="100%" poster="Images and Videos/preview.jpg">
-            <source src="Images and Videos/KDN advert video.mp4" type="video/mp4" />
-             Your browser does not support the video tag.
-            </video>
-      </section>
- 
-      <section class="overview">
-        <h3>Explore Our Website</h3>
-        <p>Navigate through our services, training programs, project references, and request a quote.</p>
-      </section>
-    </main>
- 
-    <footer>
-      <p>&copy; 2025 KDN Security Services | All Rights Reserved</p>
-    </footer>
 </body>
 </html>
