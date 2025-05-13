@@ -5,68 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Feedback | KDN Security Services</title>
   <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<header>
-  <nav>
-    <div class="logo">
-      <img src="Images and Videos/Logo.png" alt="KDN Logo" />
-      <span>KDN Security Services</span>
+<!-- Header with Bootstrap Navbar -->
+<header class="container-fluid bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="Images and Videos/Logo.png" alt="KDN Logo" class="me-2" width="50" />
+        <span class="fw-bold">KDN Security Services</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="training.html" class="nav-link">Training</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="feedback.html" class="nav-link active">Feedback</a></li>
+          <li class="nav-item"><a href="quotes.html" class="nav-link">Quotes</a></li>
+          <li class="nav-item"><a href="references.html" class="nav-link">References</a></li>
+        </ul>
+      </div>
     </div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="training.html">Training</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="feedback.html" class="active">Feedback</a></li>
-      <li><a href="quotes.html">Quotes</a></li>
-      <li><a href="references.html">References</a></li>
-    </ul>
   </nav>
 </header>
 
 <!-- Feedback Hero Section -->
-<section class="feedback-hero">
+<section class="feedback-hero text-center my-4">
   <h1>We Value Your Feedback</h1>
   <p>Tell us about your experience with KDN Security Services. Your opinion helps us improve!</p>
 </section>
 
 <!-- Feedback Form Section -->
-<main>
-  <section class="feedback-container">
-    <h2>Submit Your Feedback</h2>
-    <form action="https://formspree.io/f/manopnaj" method="POST" class="feedback-form">
-    <input type="hidden" name="_subject" value="New Feedback Submission">
-    <input type="text" name="fullname" placeholder="Your Full Name" required>
-    
-    <label for="rating">Your Rating:</label>
-    <div class="star-rating">
-        <input type="radio" id="star5" name="rating" value="5" required>
-        <label for="star5">★</label>
-        <input type="radio" id="star4" name="rating" value="4">
-        <label for="star4">★</label>
-        <input type="radio" id="star3" name="rating" value="3">
-        <label for="star3">★</label>
-        <input type="radio" id="star2" name="rating" value="2">
-        <label for="star2">★</label>
-        <input type="radio" id="star1" name="rating" value="1">
-        <label for="star1">★</label>
+<main class="container my-5">
+  <section class="row">
+    <div class="col-lg-8 mx-auto">
+      <h2>Submit Your Feedback</h2>
+      <form action="https://formspree.io/f/manopnaj" method="POST">
+        <input type="text" class="form-control my-2" name="fullname" placeholder="Your Full Name" required>
+        
+        <label for="rating">Your Rating:</label>
+        <div class="star-rating d-flex justify-content-center">
+          <input type="radio" id="star5" name="rating" value="5" required><label for="star5">★</label>
+          <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+          <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+          <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+          <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+        </div>
+
+        <textarea class="form-control my-2" name="feedback" rows="5" placeholder="Your feedback..." required></textarea>
+        <button type="submit" class="btn btn-primary w-100">Submit Feedback</button>
+      </form>
     </div>
-    
-    <textarea name="feedback" placeholder="Your feedback..." required></textarea>
-    <button type="submit">Submit Feedback</button>
-    <input type="hidden" name="_next" value="https://yourwebsite.com/submitted.html">
-</form>
   </section>
 </main>
 
-<footer>
+<footer class="container-fluid bg-dark text-white py-3 text-center">
   <p>&copy; 2025 KDN Security Services | All Rights Reserved</p>
 </footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
