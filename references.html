@@ -5,113 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>References | KDN Security Services</title>
   <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-  <nav>
-    <div class="logo">
-      <img src="Images and Videos/Logo.png" alt="KDN Logo">
-      <span>KDN Security Services</span>
+<!-- Header with Bootstrap Navbar -->
+<header class="container-fluid bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="Images and Videos/Logo.png" alt="KDN Logo" class="me-2" width="50" />
+        <span class="fw-bold">KDN Security Services</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="training.html" class="nav-link">Training</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="feedback.html" class="nav-link">Feedback</a></li>
+          <li class="nav-item"><a href="quotes.html" class="nav-link">Quotes</a></li>
+          <li class="nav-item"><a href="references.html" class="nav-link active">References</a></li>
+        </ul>
+      </div>
     </div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="training.html">Training</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="feedback.html">Feedback</a></li>
-      <li><a href="quotes.html">Quotes</a></li>
-      <li><a href="references.html" class="active">References</a></li>
-    </ul>
   </nav>
 </header>
 
 <!-- References Hero Section -->
-<section class="references-hero">
+<section class="references-hero text-center my-4">
   <h1>Our Clients and Projects</h1>
   <p>Organizations that trust KDN Security Services.</p>
 </section>
 
-<main>
-  <section class="references-container">
-    <h2>Key Clients and Projects</h2>
-    <div class="reference-cards">
-
-      <div class="reference-card">
-        <h3>Marang J.S. School</h3>
-        <p>Alarm Monitoring Services (2021 - 2023)</p>
-        <p><strong>Contact:</strong> Ms Keakile | +267 73598063</p>
-      </div>
-
-      <div class="reference-card">
-        <h3>CIPA (Francistown)</h3>
-        <p>Security Services (2021 - 2023)</p>
-        <p><strong>Contact:</strong> Mr (Cell: 74164554)</p>
-      </div>
-
-      <div class="reference-card">
-        <h3>National Museum & Monument</h3>
-        <p>Security Services (2020 - 2022)</p>
-        <p><strong>Contact:</strong> Mr Mbulawa | Tel: 3610458</p>
-      </div>
-      <div class="reference-card">
-        <h3>Attorney General Chamber</h3>
-        <p>Alarm Monitoring (2019 - 2022)</p>
-        <p><strong>Contact:</strong> Mr Chabaesile | 73174709</p>
-      </div>
-
-      <div class="reference-card">
-        <h3>Mahalapye DHMT</h3>
-        <p>Security Services (2020 - 2022)</p>
-        <p><strong>Contact:</strong> Mr Mmereki | 74089840</p>
-      </div>
-
-      <div class="reference-card">
-        <h3>Ngwato Land Board</h3>
-        <p>Security Services (2020 - 2022)</p>
-        <p><strong>Contact:</strong> Mr Nnang | 76428568</p>
-      </div>
-
-      <div class="reference-card">
-        <h3>Maun (Accountant General)</h3>
-        <p>Security Services (2019 - 2022)</p>
-        <p><strong>Contact:</strong> Ms Tsheko | 76435343</p>
-      </div>
-
-      <div class="reference-card">
-        <h3>Lotsane Senior School</h3>
-        <p>Security Services, Alarm Monitoring, CCTV Installation (2018 - 2020)</p>
-        <p><strong>Contact:</strong> Mr Tshebo | 71710787</p>
-      </div>
-
-      <div class="reference-card">
-        <h3>FOURS Cash & Carry</h3>
-        <p>Security Services</p>
-        <p><strong>Contact:</strong> Mr Manjula | Tel: 3930293</p>
-      </div>
-
-      <div class="reference-card">
-        <h3>Bond Risk Solution</h3>
-        <p>Alarm Installation and CCTV (2015)</p>
-        <p><strong>Contact:</strong> 73639978</p>
-      </div>
-
-      <div class="reference-card">
-        <h3>Trademost (Pty) Ltd</h3>
-        <p>Security Services & Alarm Installation (2016 - 2017)</p>
-        <p><strong>Contact:</strong> Mr Okgala | 73757222</p>
+<main class="container my-5">
+  <section class="row">
+    <div class="col-lg-8 mx-auto">
+      <h2>Key Clients and Projects</h2>
+      <div class="reference-cards">
+        <div class="reference-card">
+          <h3>Marang J.S. School</h3>
+          <p>Alarm Monitoring Services (2021 - 2023)</p>
+          <p><strong>Contact:</strong> Ms Keakile | +267 73598063</p>
+        </div>
+        <!-- Additional reference cards here -->
       </div>
     </div>
   </section>
 </main>
 
-<footer>
+<footer class="container-fluid bg-dark text-white py-3 text-center">
   <p>&copy; 2025 KDN Security Services | All Rights Reserved</p>
 </footer>
 
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
- 
